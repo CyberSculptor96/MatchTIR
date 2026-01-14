@@ -7,8 +7,8 @@ Tool-Integrated Reasoning via Bipartite Matching
 <div align="center"> 
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b.svg?logo=arxiv)]()
-[![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow?logo=huggingface)]()
-[![Model](https://img.shields.io/badge/Model-HuggingFace-yellow?logo=huggingface)]()
+[![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow?logo=huggingface)](https://huggingface.co/collections/ChangleQu/matchtir)
+[![Model](https://img.shields.io/badge/Model-HuggingFace-yellow?logo=huggingface)](https://huggingface.co/collections/ChangleQu/matchtir)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/) 
 </div>
 
@@ -16,14 +16,14 @@ Tool-Integrated Reasoning via Bipartite Matching
 
 ## 📣 Latest News
 - **[Jan 15, 2026]**: 📄 Our paper is now available on **[arXiv]()** and **[Hugging Face]()** daily paper.
-- **[Jan 14, 2026]**: 🔥 We released all our **MatchTIR model checkpoints** and **datasets**. Checkout **[🤗 MatchTIR]()** here.
+- **[Jan 14, 2026]**: 🔥 We released all our **MatchTIR model checkpoints** and **datasets**. Checkout **[🤗 MatchTIR](https://huggingface.co/collections/ChangleQu/matchtir)** here.
 - **[Jan 14, 2026]**: 🚀 Full codebase of **MatchTIR** released.
   
 ## 📦 Dataset & Model Zoo
 
 | **Dataset**         | **Download**                                                 |
 | ----------------- | ------------------------------------------------------------ |
-| FTRL Training Data | [🤗 HuggingFace]() |
+| FTRL Training Data | [🤗 HuggingFace](https://huggingface.co/datasets/ChangleQu/MatchTIR) |
 
 | **Model**         | **Download**                                                 |
 | ----------------- | ------------------------------------------------------------ |
