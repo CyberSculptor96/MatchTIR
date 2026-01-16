@@ -127,6 +127,7 @@ If you find our code or work useful for your research, please cite our work.
 @article{qu2026matchtir,
   title={MatchTIR: Fine-Grained Supervision for Tool-Integrated Reasoning via Bipartite Matching},
   author={Qu, Changle and Dai, Sunhao and Cai, Hengyi and Xu, Jun and Wang, Shuaiqiang and Yin, Dawei},
+  journal={arXiv preprint arXiv:2601.10712},
   year={2026}
 }
 ```
