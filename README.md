@@ -6,7 +6,8 @@ Tool-Integrated Reasoning via Bipartite Matching
 
 <div align="center"> 
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b.svg?logo=arxiv)]()
+[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2601.10712)
+[![Paper](https://img.shields.io/badge/Dataset-HuggingFace-yellow?logo=huggingface)]([https://huggingface.co/collections/ChangleQu/matchtir](https://huggingface.co/papers/2601.10712))
 [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow?logo=huggingface)](https://huggingface.co/collections/ChangleQu/matchtir)
 [![Model](https://img.shields.io/badge/Model-HuggingFace-yellow?logo=huggingface)](https://huggingface.co/collections/ChangleQu/matchtir)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/) 
