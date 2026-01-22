@@ -48,7 +48,6 @@ fastapi-cli==0.0.16
 fastapi-cloud-cli==0.3.1
 fastrlock==0.8.3
 filelock==3.18.0
-flash_attn==2.7.4.post1
 Flask==3.1.2
 fonttools==4.60.1
 frozenlist==1.8.0
@@ -111,7 +110,7 @@ nest-asyncio==1.6.0
 networkx==3.4.2
 ninja==1.13.0
 numba==0.61.2
-numpy==1.26.4
+numpy>=1.26.4,<2.3.0    # 2.2.6 -> 1.26.4
 nvidia-cublas-cu12==12.4.5.8
 nvidia-cuda-cupti-cu12==12.4.127
 nvidia-cuda-nvrtc-cu12==12.4.127
@@ -130,7 +129,6 @@ nvitop==1.6.0
 oauthlib==3.3.1
 omegaconf==2.3.0
 openai==1.97.1
-opencv-python-headless==4.12.0.88
 opentelemetry-api==1.26.0
 opentelemetry-exporter-otlp==1.26.0
 opentelemetry-exporter-otlp-proto-common==1.26.0
@@ -259,3 +257,5 @@ zipp==3.23.0
 zope.deprecation==6.0
 zope.interface==8.1
 zope.sqlalchemy==4.0
+# flash_attn==2.7.4.post1
+# opencv-python-headless<=4.11.0

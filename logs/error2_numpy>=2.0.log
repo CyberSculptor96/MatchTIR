@@ -1,0 +1,500 @@
+/wangbenyou-huanghejin/workspace/rl/MatchTIR/Code/verl/__init__.py:17: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-01-18 04:29:36,668	WARNING utils.py:460 -- Detecting docker specified CPUs. In previous versions of Ray, CPU detection in containers was incorrect. Please ensure that Ray has enough CPUs allocated. As a temporary workaround to revert to the prior behavior, set `RAY_USE_MULTIPROCESSING_CPU_COUNT=1` as an env var before starting Ray. Set the env var: `RAY_DISABLE_DOCKER_CPU_WARNING=1` to mute this warning.
+2026-01-18 04:29:38,151	INFO worker.py:2012 -- Started a local Ray instance.
+/wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/ray/_private/worker.py:2051: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+[36m(pid=58126)[0m /wangbenyou-huanghejin/workspace/rl/MatchTIR/Code/verl/__init__.py:17: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[36m(pid=58126)[0m   import pkg_resources
+[36m(pid=58126)[0m /wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+[36m(pid=58126)[0m   import pynvml  # type: ignore[import]
+[36m(TaskRunner pid=58126)[0m {'actor_rollout_ref': {'actor': {'checkpoint': {'contents': ['model',
+[36m(TaskRunner pid=58126)[0m                                                              'optimizer',
+[36m(TaskRunner pid=58126)[0m                                                              'extra']},
+[36m(TaskRunner pid=58126)[0m                                  'clip_ratio': 0.2,
+[36m(TaskRunner pid=58126)[0m                                  'clip_ratio_c': 3.0,
+[36m(TaskRunner pid=58126)[0m                                  'clip_ratio_high': 0.2,
+[36m(TaskRunner pid=58126)[0m                                  'clip_ratio_low': 0.2,
+[36m(TaskRunner pid=58126)[0m                                  'entropy_coeff': 0.001,
+[36m(TaskRunner pid=58126)[0m                                  'fsdp_config': {'fsdp_size': -1,
+[36m(TaskRunner pid=58126)[0m                                                  'offload_policy': False,
+[36m(TaskRunner pid=58126)[0m                                                  'optimizer_offload': True,
+[36m(TaskRunner pid=58126)[0m                                                  'param_offload': True,
+[36m(TaskRunner pid=58126)[0m                                                  'reshard_after_forward': True,
+[36m(TaskRunner pid=58126)[0m                                                  'wrap_policy': {'min_num_params': 0}},
+[36m(TaskRunner pid=58126)[0m                                  'grad_clip': 1.0,
+[36m(TaskRunner pid=58126)[0m                                  'kl_loss_coef': 0.001,
+[36m(TaskRunner pid=58126)[0m                                  'kl_loss_type': 'low_var_kl',
+[36m(TaskRunner pid=58126)[0m                                  'loss_agg_mode': 'seq-mean-token-mean',
+[36m(TaskRunner pid=58126)[0m                                  'optim': {'lr': 1e-06,
+[36m(TaskRunner pid=58126)[0m                                            'lr_warmup_steps': -1,
+[36m(TaskRunner pid=58126)[0m                                            'lr_warmup_steps_ratio': 0.0,
+[36m(TaskRunner pid=58126)[0m                                            'min_lr_ratio': 0.0,
+[36m(TaskRunner pid=58126)[0m                                            'num_cycles': 0.5,
+[36m(TaskRunner pid=58126)[0m                                            'total_training_steps': -1,
+[36m(TaskRunner pid=58126)[0m                                            'warmup_style': 'constant',
+[36m(TaskRunner pid=58126)[0m                                            'weight_decay': 0.01},
+[36m(TaskRunner pid=58126)[0m                                  'ppo_epochs': 1,
+[36m(TaskRunner pid=58126)[0m                                  'ppo_max_token_len_per_gpu': 30000,
+[36m(TaskRunner pid=58126)[0m                                  'ppo_micro_batch_size': None,
+[36m(TaskRunner pid=58126)[0m                                  'ppo_micro_batch_size_per_gpu': None,
+[36m(TaskRunner pid=58126)[0m                                  'ppo_mini_batch_size': 32,
+[36m(TaskRunner pid=58126)[0m                                  'shuffle': False,
+[36m(TaskRunner pid=58126)[0m                                  'strategy': 'fsdp',
+[36m(TaskRunner pid=58126)[0m                                  'ulysses_sequence_parallel_size': 1,
+[36m(TaskRunner pid=58126)[0m                                  'use_dynamic_bsz': True,
+[36m(TaskRunner pid=58126)[0m                                  'use_kl_loss': True,
+[36m(TaskRunner pid=58126)[0m                                  'use_torch_compile': True},
+[36m(TaskRunner pid=58126)[0m                        'hybrid_engine': True,
+[36m(TaskRunner pid=58126)[0m                        'model': {'enable_activation_offload': False,
+[36m(TaskRunner pid=58126)[0m                                  'enable_gradient_checkpointing': True,
+[36m(TaskRunner pid=58126)[0m                                  'external_lib': None,
+[36m(TaskRunner pid=58126)[0m                                  'override_config': {},
+[36m(TaskRunner pid=58126)[0m                                  'path': '/wangbenyou-huanghejin/models/Qwen3-8B',
+[36m(TaskRunner pid=58126)[0m                                  'trust_remote_code': False,
+[36m(TaskRunner pid=58126)[0m                                  'use_fused_kernels': False,
+[36m(TaskRunner pid=58126)[0m                                  'use_liger': False,
+[36m(TaskRunner pid=58126)[0m                                  'use_remove_padding': True},
+[36m(TaskRunner pid=58126)[0m                        'ref': {'fsdp_config': {'param_offload': True,
+[36m(TaskRunner pid=58126)[0m                                                'reshard_after_forward': True,
+[36m(TaskRunner pid=58126)[0m                                                'wrap_policy': {'min_num_params': 0}},
+[36m(TaskRunner pid=58126)[0m                                'log_prob_max_token_len_per_gpu': 30000,
+[36m(TaskRunner pid=58126)[0m                                'log_prob_micro_batch_size': None,
+[36m(TaskRunner pid=58126)[0m                                'log_prob_micro_batch_size_per_gpu': None,
+[36m(TaskRunner pid=58126)[0m                                'log_prob_use_dynamic_bsz': True,
+[36m(TaskRunner pid=58126)[0m                                'strategy': 'fsdp',
+[36m(TaskRunner pid=58126)[0m                                'ulysses_sequence_parallel_size': 1,
+[36m(TaskRunner pid=58126)[0m                                'use_torch_compile': True},
+[36m(TaskRunner pid=58126)[0m                        'rollout': {'chat_scheduler': None,
+[36m(TaskRunner pid=58126)[0m                                    'disable_log_stats': True,
+[36m(TaskRunner pid=58126)[0m                                    'do_sample': True,
+[36m(TaskRunner pid=58126)[0m                                    'dtype': 'bfloat16',
+[36m(TaskRunner pid=58126)[0m                                    'enable_chunked_prefill': True,
+[36m(TaskRunner pid=58126)[0m                                    'enable_thinking': True,
+[36m(TaskRunner pid=58126)[0m                                    'enforce_eager': True,
+[36m(TaskRunner pid=58126)[0m                                    'engine_kwargs': {'sglang': {'attention_backend': None},
+[36m(TaskRunner pid=58126)[0m                                                      'vllm': {'swap_space': None}},
+[36m(TaskRunner pid=58126)[0m                                    'free_cache_engine': True,
+[36m(TaskRunner pid=58126)[0m                                    'gpu_memory_utilization': 0.7,
+[36m(TaskRunner pid=58126)[0m                                    'ignore_eos': False,
+[36m(TaskRunner pid=58126)[0m                                    'load_format': 'dummy_dtensor',
+[36m(TaskRunner pid=58126)[0m                                    'log_prob_max_token_len_per_gpu': 30000,
+[36m(TaskRunner pid=58126)[0m                                    'log_prob_micro_batch_size': None,
+[36m(TaskRunner pid=58126)[0m                                    'log_prob_micro_batch_size_per_gpu': None,
+[36m(TaskRunner pid=58126)[0m                                    'log_prob_use_dynamic_bsz': True,
+[36m(TaskRunner pid=58126)[0m                                    'max_model_len': None,
+[36m(TaskRunner pid=58126)[0m                                    'max_num_batched_tokens': 32768,
+[36m(TaskRunner pid=58126)[0m                                    'max_num_seqs': 1024,
+[36m(TaskRunner pid=58126)[0m                                    'mode': 'sync',
+[36m(TaskRunner pid=58126)[0m                                    'multi_turn': {'enable': False,
+[36m(TaskRunner pid=58126)[0m                                                   'format': 'chatml',
+[36m(TaskRunner pid=58126)[0m                                                   'max_turns': None,
+[36m(TaskRunner pid=58126)[0m                                                   'tool_config_path': None},
+[36m(TaskRunner pid=58126)[0m                                    'n': 16,
+[36m(TaskRunner pid=58126)[0m                                    'name': 'vllm',
+[36m(TaskRunner pid=58126)[0m                                    'prompt_length': 7000,
+[36m(TaskRunner pid=58126)[0m                                    'response_length': 23000,
+[36m(TaskRunner pid=58126)[0m                                    'temperature': 1.0,
+[36m(TaskRunner pid=58126)[0m                                    'tensor_model_parallel_size': 1,
+[36m(TaskRunner pid=58126)[0m                                    'top_k': -1,
+[36m(TaskRunner pid=58126)[0m                                    'top_p': 1,
+[36m(TaskRunner pid=58126)[0m                                    'use_fire_sampling': False,
+[36m(TaskRunner pid=58126)[0m                                    'val_kwargs': {'do_sample': False,
+[36m(TaskRunner pid=58126)[0m                                                   'n': 1,
+[36m(TaskRunner pid=58126)[0m                                                   'temperature': 0,
+[36m(TaskRunner pid=58126)[0m                                                   'top_k': -1,
+[36m(TaskRunner pid=58126)[0m                                                   'top_p': 1.0}}},
+[36m(TaskRunner pid=58126)[0m  'algorithm': {'adv_estimator': 'grpo',
+[36m(TaskRunner pid=58126)[0m                'gamma': 1.0,
+[36m(TaskRunner pid=58126)[0m                'kl_ctrl': {'horizon': 10000,
+[36m(TaskRunner pid=58126)[0m                            'kl_coef': 0.001,
+[36m(TaskRunner pid=58126)[0m                            'target_kl': 0.1,
+[36m(TaskRunner pid=58126)[0m                            'type': 'fixed'},
+[36m(TaskRunner pid=58126)[0m                'kl_penalty': 'kl',
+[36m(TaskRunner pid=58126)[0m                'lam': 1.0,
+[36m(TaskRunner pid=58126)[0m                'norm_adv_by_std_in_grpo': True,
+[36m(TaskRunner pid=58126)[0m                'use_kl_in_reward': False},
+[36m(TaskRunner pid=58126)[0m  'critic': {'checkpoint': {'contents': ['model', 'optimizer', 'extra']},
+[36m(TaskRunner pid=58126)[0m             'cliprange_value': 0.5,
+[36m(TaskRunner pid=58126)[0m             'forward_max_token_len_per_gpu': 32768,
+[36m(TaskRunner pid=58126)[0m             'forward_micro_batch_size': None,
+[36m(TaskRunner pid=58126)[0m             'forward_micro_batch_size_per_gpu': None,
+[36m(TaskRunner pid=58126)[0m             'grad_clip': 'inf',
+[36m(TaskRunner pid=58126)[0m             'loss_agg_mode': 'seq-mean-token-mean',
+[36m(TaskRunner pid=58126)[0m             'model': {'enable_activation_offload': False,
+[36m(TaskRunner pid=58126)[0m                       'enable_gradient_checkpointing': True,
+[36m(TaskRunner pid=58126)[0m                       'external_lib': None,
+[36m(TaskRunner pid=58126)[0m                       'fsdp_config': {'fsdp_size': -1,
+[36m(TaskRunner pid=58126)[0m                                       'offload_policy': False,
+[36m(TaskRunner pid=58126)[0m                                       'optimizer_offload': False,
+[36m(TaskRunner pid=58126)[0m                                       'param_offload': False,
+[36m(TaskRunner pid=58126)[0m                                       'reshard_after_forward': True,
+[36m(TaskRunner pid=58126)[0m                                       'wrap_policy': {'min_num_params': 0}},
+[36m(TaskRunner pid=58126)[0m                       'override_config': {},
+[36m(TaskRunner pid=58126)[0m                       'path': '~/models/deepseek-llm-7b-chat',
+[36m(TaskRunner pid=58126)[0m                       'tokenizer_path': '/wangbenyou-huanghejin/models/Qwen3-8B',
+[36m(TaskRunner pid=58126)[0m                       'trust_remote_code': False,
+[36m(TaskRunner pid=58126)[0m                       'use_remove_padding': False},
+[36m(TaskRunner pid=58126)[0m             'optim': {'lr': 1e-05,
+[36m(TaskRunner pid=58126)[0m                       'lr_warmup_steps_ratio': 0.0,
+[36m(TaskRunner pid=58126)[0m                       'min_lr_ratio': None,
+[36m(TaskRunner pid=58126)[0m                       'total_training_steps': -1,
+[36m(TaskRunner pid=58126)[0m                       'warmup_style': 'constant',
+[36m(TaskRunner pid=58126)[0m                       'weight_decay': 0.01},
+[36m(TaskRunner pid=58126)[0m             'ppo_epochs': 1,
+[36m(TaskRunner pid=58126)[0m             'ppo_max_token_len_per_gpu': 32768,
+[36m(TaskRunner pid=58126)[0m             'ppo_micro_batch_size': None,
+[36m(TaskRunner pid=58126)[0m             'ppo_micro_batch_size_per_gpu': None,
+[36m(TaskRunner pid=58126)[0m             'ppo_mini_batch_size': 32,
+[36m(TaskRunner pid=58126)[0m             'rollout_n': 16,
+[36m(TaskRunner pid=58126)[0m             'shuffle': False,
+[36m(TaskRunner pid=58126)[0m             'strategy': 'fsdp',
+[36m(TaskRunner pid=58126)[0m             'ulysses_sequence_parallel_size': 1,
+[36m(TaskRunner pid=58126)[0m             'use_dynamic_bsz': True},
+[36m(TaskRunner pid=58126)[0m  'custom_reward_function': {'name': 'compute_process_KM',
+[36m(TaskRunner pid=58126)[0m                             'path': 'Code/verl/utils/reward_score/tool.py'},
+[36m(TaskRunner pid=58126)[0m  'data': {'custom_cls': {'name': None, 'path': None},
+[36m(TaskRunner pid=58126)[0m           'enable_thinking': True,
+[36m(TaskRunner pid=58126)[0m           'filter_overlong_prompts': True,
+[36m(TaskRunner pid=58126)[0m           'filter_overlong_prompts_workers': 1,
+[36m(TaskRunner pid=58126)[0m           'image_key': 'images',
+[36m(TaskRunner pid=58126)[0m           'max_prompt_length': 7000,
+[36m(TaskRunner pid=58126)[0m           'max_response_length': 23000,
+[36m(TaskRunner pid=58126)[0m           'prompt_key': 'messages',
+[36m(TaskRunner pid=58126)[0m           'return_full_prompt': False,
+[36m(TaskRunner pid=58126)[0m           'return_raw_chat': False,
+[36m(TaskRunner pid=58126)[0m           'return_raw_input_ids': False,
+[36m(TaskRunner pid=58126)[0m           'reward_fn_key': 'data_source',
+[36m(TaskRunner pid=58126)[0m           'shuffle': True,
+[36m(TaskRunner pid=58126)[0m           'system_style': 'Qwen3',
+[36m(TaskRunner pid=58126)[0m           'tokenizer': None,
+[36m(TaskRunner pid=58126)[0m           'tools_key': 'tools',
+[36m(TaskRunner pid=58126)[0m           'train_batch_size': 256,
+[36m(TaskRunner pid=58126)[0m           'train_files': 'Data/train.parquet',
+[36m(TaskRunner pid=58126)[0m           'truncation': 'error',
+[36m(TaskRunner pid=58126)[0m           'val_batch_size': 256,
+[36m(TaskRunner pid=58126)[0m           'val_files': 'Data/test.parquet',
+[36m(TaskRunner pid=58126)[0m           'video_key': 'videos'},
+[36m(TaskRunner pid=58126)[0m  'ray_init': {'num_cpus': None},
+[36m(TaskRunner pid=58126)[0m  'reward_model': {'enable': False,
+[36m(TaskRunner pid=58126)[0m                   'forward_max_token_len_per_gpu': 32768,
+[36m(TaskRunner pid=58126)[0m                   'launch_reward_fn_async': False,
+[36m(TaskRunner pid=58126)[0m                   'max_length': None,
+[36m(TaskRunner pid=58126)[0m                   'micro_batch_size': None,
+[36m(TaskRunner pid=58126)[0m                   'micro_batch_size_per_gpu': None,
+[36m(TaskRunner pid=58126)[0m                   'model': {'external_lib': None,
+[36m(TaskRunner pid=58126)[0m                             'fsdp_config': {'fsdp_size': -1,
+[36m(TaskRunner pid=58126)[0m                                             'param_offload': False,
+[36m(TaskRunner pid=58126)[0m                                             'reshard_after_forward': True,
+[36m(TaskRunner pid=58126)[0m                                             'wrap_policy': {'min_num_params': 0}},
+[36m(TaskRunner pid=58126)[0m                             'input_tokenizer': '/wangbenyou-huanghejin/models/Qwen3-8B',
+[36m(TaskRunner pid=58126)[0m                             'path': '~/models/FsfairX-LLaMA3-RM-v0.1',
+[36m(TaskRunner pid=58126)[0m                             'trust_remote_code': False,
+[36m(TaskRunner pid=58126)[0m                             'use_fused_kernels': False,
+[36m(TaskRunner pid=58126)[0m                             'use_remove_padding': False},
+[36m(TaskRunner pid=58126)[0m Filtering prompts longer than 7000 tokens:   0%|          | 0/2215 [00:00<?, ? examples/s]
+[36m(TaskRunner pid=58126)[0m Filtering prompts longer than 7000 tokens:  45%|████▌     | 1000/2215 [00:06<00:08, 149.14 examples/s]
+[36m(pid=gcs_server)[0m [2026-01-18 04:30:03,924 E 54475 54475] (gcs_server) gcs_server.cc:302: Failed to establish connection to the event+metrics exporter agent. Events and metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[33m(raylet)[0m [2026-01-18 04:30:07,142 E 54921 54921] (raylet) main.cc:975: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[36m(TaskRunner pid=58126)[0m Filtering prompts longer than 7000 tokens:  90%|█████████ | 2000/2215 [00:13<00:01, 142.26 examples/s]
+[36m(pid=55216)[0m [2026-01-18 04:30:08,994 E 55216 56532] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[2026-01-18 04:30:09,719 E 54208 55187] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[36m(TaskRunner pid=58126)[0m Filtering prompts longer than 7000 tokens: 100%|██████████| 2215/2215 [00:15<00:00, 139.19 examples/s]Filtering prompts longer than 7000 tokens: 100%|██████████| 2215/2215 [00:15<00:00, 141.15 examples/s]
+[36m(TaskRunner pid=58126)[0m Filtering prompts longer than 7000 tokens:   0%|          | 0/200 [00:00<?, ? examples/s]
+[36m(TaskRunner pid=58126)[0m Filtering prompts longer than 7000 tokens: 100%|██████████| 200/200 [00:01<00:00, 140.21 examples/s]Filtering prompts longer than 7000 tokens: 100%|██████████| 200/200 [00:01<00:00, 140.08 examples/s]
+[36m(TaskRunner pid=58126)[0m DeprecationWarning: `ray.state.available_resources_per_node` is a private attribute and access will be removed in a future Ray version.
+[36m(TaskRunner pid=58126)[0m WARNING:2026-01-18 04:30:14,563:Waiting for register center actor 40yjCa_register_center to be ready. Elapsed time: 0 seconds out of 300 seconds.
+[36m(TaskRunner pid=58126)[0m [2026-01-18 04:30:10,445 E 58126 58164] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14[32m [repeated 49x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(pid=59195)[0m /wangbenyou-huanghejin/workspace/rl/MatchTIR/Code/verl/__init__.py:17: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[36m(pid=59195)[0m   import pkg_resources
+[36m(pid=59195)[0m /wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+[36m(pid=59195)[0m   import pynvml  # type: ignore[import]
+[36m(pid=59553)[0m /wangbenyou-huanghejin/workspace/rl/MatchTIR/Code/verl/__init__.py:17: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[36m(pid=59553)[0m   import pkg_resources
+[36m(pid=59552)[0m /wangbenyou-huanghejin/workspace/rl/MatchTIR/Code/verl/__init__.py:17: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[36m(pid=59552)[0m   import pkg_resources
+[36m(pid=59553)[0m /wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+[36m(pid=59553)[0m   import pynvml  # type: ignore[import]
+[36m(bundle_reservation_check_func pid=58969)[0m [2026-01-18 04:30:44,271 E 58969 59108] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[36m(pid=59554)[0m /wangbenyou-huanghejin/workspace/rl/MatchTIR/Code/verl/__init__.py:17: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[36m(pid=59554)[0m   import pkg_resources
+[36m(pid=59554)[0m /wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.[32m [repeated 2x across cluster][0m
+[36m(pid=59554)[0m   import pynvml  # type: ignore[import][32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=59195)[0m You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+[36m(WorkerDict pid=59195)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=59195)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.20it/s]
+[36m(WorkerDict pid=59195)[0m [2026-01-18 04:30:45,278 E 59195 59233] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[36m(WorkerDict pid=59195)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:04<00:00,  1.13it/s]
+[36m(WorkerGroupRegisterCenter pid=59405)[0m [2026-01-18 04:30:57,683 E 59405 59465] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[36m(WorkerDict pid=59554)[0m You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59554)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s][32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59554)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:04<00:01,  1.09s/it][32m [repeated 15x across cluster][0m
+[36m(WorkerDict pid=59554)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:04<00:00,  1.12it/s][32m [repeated 3x across cluster][0m
+[36m(TaskRunner pid=58126)[0m                   'reward_manager': 'tool',
+[36m(TaskRunner pid=58126)[0m                   'sandbox_fusion': {'max_concurrent': 64, 'url': None},
+[36m(TaskRunner pid=58126)[0m                   'strategy': 'fsdp',
+[36m(TaskRunner pid=58126)[0m                   'ulysses_sequence_parallel_size': 1,
+[36m(TaskRunner pid=58126)[0m                   'use_dynamic_bsz': True},
+[36m(TaskRunner pid=58126)[0m  'trainer': {'balance_batch': True,
+[36m(TaskRunner pid=58126)[0m              'critic_warmup': 0,
+[36m(TaskRunner pid=58126)[0m              'default_hdfs_dir': None,
+[36m(TaskRunner pid=58126)[0m              'default_local_dir': 'checkpoints/MatchTIR/MatchTIR-8B',
+[36m(TaskRunner pid=58126)[0m              'del_local_ckpt_after_load': False,
+[36m(TaskRunner pid=58126)[0m              'experiment_name': 'MatchTIR-8B',
+[36m(TaskRunner pid=58126)[0m              'log_val_generations': 0,
+[36m(TaskRunner pid=58126)[0m              'logger': ['console', 'wandb'],
+[36m(TaskRunner pid=58126)[0m              'max_actor_ckpt_to_keep': None,
+[36m(TaskRunner pid=58126)[0m              'max_critic_ckpt_to_keep': None,
+[36m(TaskRunner pid=58126)[0m              'n_gpus_per_node': 4,
+[36m(TaskRunner pid=58126)[0m              'nnodes': 1,
+[36m(TaskRunner pid=58126)[0m              'project_name': 'MatchTIR',
+[36m(TaskRunner pid=58126)[0m              'ray_wait_register_center_timeout': 300,
+[36m(TaskRunner pid=58126)[0m              'resume_from_path': None,
+[36m(TaskRunner pid=58126)[0m              'resume_mode': 'auto',
+[36m(TaskRunner pid=58126)[0m              'rollout_data_dir': 'rollout/MatchTIR/MatchTIR-8B',
+[36m(TaskRunner pid=58126)[0m              'save_freq': 8,
+[36m(TaskRunner pid=58126)[0m              'test_freq': 4,
+[36m(TaskRunner pid=58126)[0m              'total_epochs': 3,
+[36m(TaskRunner pid=58126)[0m              'total_training_steps': None,
+[36m(TaskRunner pid=58126)[0m              'val_before_train': False,
+[36m(TaskRunner pid=58126)[0m              'val_only': False,
+[36m(TaskRunner pid=58126)[0m              'validation_data_dir': 'validation/MatchTIR/MatchTIR-8B'}}
+[36m(TaskRunner pid=58126)[0m using customized reward function 'compute_process_KM' from 'Code/verl/utils/reward_score/tool.py'
+[36m(TaskRunner pid=58126)[0m using customized reward function 'compute_process_KM' from 'Code/verl/utils/reward_score/tool.py'
+[36m(TaskRunner pid=58126)[0m Using dataset class: RLHFDataset
+[36m(TaskRunner pid=58126)[0m dataset len: 2215
+[36m(TaskRunner pid=58126)[0m filter dataset len: 2215
+[36m(TaskRunner pid=58126)[0m Using dataset class: RLHFDataset
+[36m(TaskRunner pid=58126)[0m dataset len: 200
+[36m(TaskRunner pid=58126)[0m filter dataset len: 200
+[36m(TaskRunner pid=58126)[0m WARNING: val_batch_size is deprecated. Validation datasets are sent to inference engines as a whole batch, which will schedule the memory themselves.
+[36m(TaskRunner pid=58126)[0m [validate_config] All configuration checks passed successfully!
+[36m(TaskRunner pid=58126)[0m Size of train dataloader: 8, Size of val dataloader: 1
+[36m(TaskRunner pid=58126)[0m Total training steps: 24
+[36m(TaskRunner pid=58126)[0m colocated worker base class <class 'verl.single_controller.base.worker.Worker'>
+[36m(WorkerDict pid=59195)[0m Model config after override: Qwen3Config {
+[36m(WorkerDict pid=59195)[0m   "architectures": [
+[36m(WorkerDict pid=59195)[0m     "Qwen3ForCausalLM"
+[36m(WorkerDict pid=59195)[0m   ],
+[36m(WorkerDict pid=59195)[0m   "attention_bias": false,
+[36m(WorkerDict pid=59195)[0m   "attention_dropout": 0.0,
+[36m(WorkerDict pid=59195)[0m   "eos_token_id": 151645,
+[36m(WorkerDict pid=59195)[0m   "head_dim": 128,
+[36m(WorkerDict pid=59195)[0m   "hidden_act": "silu",
+[36m(WorkerDict pid=59195)[0m   "hidden_size": 4096,
+[36m(WorkerDict pid=59195)[0m   "initializer_range": 0.02,
+[36m(WorkerDict pid=59195)[0m   "intermediate_size": 12288,
+[36m(WorkerDict pid=59195)[0m   "layer_types": [
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention"
+[36m(WorkerDict pid=59195)[0m   ],
+[36m(WorkerDict pid=59195)[0m   "max_position_embeddings": 40960,
+[36m(WorkerDict pid=59195)[0m   "max_window_layers": 36,
+[36m(WorkerDict pid=59195)[0m   "model_type": "qwen3",
+[36m(WorkerDict pid=59195)[0m   "num_attention_heads": 32,
+[36m(WorkerDict pid=59195)[0m   "num_hidden_layers": 36,
+[36m(WorkerDict pid=59195)[0m   "num_key_value_heads": 8,
+[36m(WorkerDict pid=59195)[0m   "pad_token_id": 151643,
+[36m(WorkerDict pid=59195)[0m   "rms_norm_eps": 1e-06,
+[36m(WorkerDict pid=59195)[0m   "rope_scaling": null,
+[36m(WorkerDict pid=59195)[0m   "rope_theta": 1000000,
+[36m(WorkerDict pid=59195)[0m   "sliding_window": null,
+[36m(WorkerDict pid=59195)[0m   "tie_word_embeddings": false,
+[36m(WorkerDict pid=59195)[0m   "torch_dtype": "bfloat16",
+[36m(WorkerDict pid=59195)[0m   "transformers_version": "4.53.3",
+[36m(WorkerDict pid=59195)[0m   "use_cache": true,
+[36m(WorkerDict pid=59195)[0m   "use_sliding_window": false,
+[36m(WorkerDict pid=59195)[0m   "vocab_size": 151936
+[36m(WorkerDict pid=59195)[0m }
+[36m(WorkerDict pid=59195)[0m 
+[36m(WorkerDict pid=59195)[0m Monkey patch _flash_attention_forward in transformers.integrations.flash_attention
+[36m(WorkerDict pid=59195)[0m Qwen3ForCausalLM contains 8.19B parameters
+[36m(WorkerDict pid=59195)[0m wrap_policy: functools.partial(<function _or_policy at 0x7f290af55360>, policies=[functools.partial(<function transformer_auto_wrap_policy at 0x7f290af55240>, transformer_layer_cls={<class 'transformers.models.qwen3.modeling_qwen3.Qwen3DecoderLayer'>})])
+[36m(WorkerDict pid=59195)[0m NCCL version 2.21.5+cuda12.4
+[36m(WorkerDict pid=59553)[0m Actor use_remove_padding=True
+[36m(WorkerDict pid=59553)[0m Actor use_fused_kernels=False
+[36m(WorkerDict pid=59554)[0m Monkey patch _flash_attention_forward in transformers.integrations.flash_attention[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59195)[0m /wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+[36m(WorkerDict pid=59195)[0m   import pynvml  # type: ignore[import]
+[36m(WorkerDict pid=59554)[0m [2026-01-18 04:30:58,676 E 59554 59718] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59552)[0m Flash Attention 2.0 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=59553)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=59195)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:04<00:16,  4.17s/it]
+[36m(WorkerDict pid=59554)[0m /wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59554)[0m   import pynvml  # type: ignore[import][32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59554)[0m Flash Attention 2.0 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59195)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s][32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59553)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:16<00:27,  9.00s/it][32m [repeated 4x across cluster][0m
+[36m(WorkerDict pid=59554)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:29<00:21, 10.79s/it][32m [repeated 4x across cluster][0m
+[36m(WorkerDict pid=59553)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:40<00:10, 10.71s/it][32m [repeated 4x across cluster][0m
+[36m(WorkerDict pid=59195)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:44<00:00,  8.21s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:44<00:00,  8.82s/it]
+[36m(WorkerDict pid=59553)[0m /wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:690: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=59553)[0m   warnings.warn(
+[36m(WorkerDict pid=59554)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:40<00:10, 10.76s/it][32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59554)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:44<00:00,  8.26s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:44<00:00,  8.86s/it][32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59554)[0m wrap_policy: functools.partial(<function _or_policy at 0x7f9a6e54d360>, policies=[functools.partial(<function transformer_auto_wrap_policy at 0x7f9a6e54d240>, transformer_layer_cls={<class 'transformers.models.qwen3.modeling_qwen3.Qwen3DecoderLayer'>})])[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59195)[0m Model config after override: Qwen3Config {
+[36m(WorkerDict pid=59195)[0m   "architectures": [
+[36m(WorkerDict pid=59195)[0m     "Qwen3ForCausalLM"
+[36m(WorkerDict pid=59195)[0m   ],
+[36m(WorkerDict pid=59195)[0m   "attention_bias": false,
+[36m(WorkerDict pid=59195)[0m   "attention_dropout": 0.0,
+[36m(WorkerDict pid=59195)[0m   "eos_token_id": 151645,
+[36m(WorkerDict pid=59195)[0m   "head_dim": 128,
+[36m(WorkerDict pid=59195)[0m   "hidden_act": "silu",
+[36m(WorkerDict pid=59195)[0m   "hidden_size": 4096,
+[36m(WorkerDict pid=59195)[0m   "initializer_range": 0.02,
+[36m(WorkerDict pid=59195)[0m   "intermediate_size": 12288,
+[36m(WorkerDict pid=59195)[0m   "layer_types": [
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention",
+[36m(WorkerDict pid=59195)[0m     "full_attention"
+[36m(WorkerDict pid=59195)[0m   ],
+[36m(WorkerDict pid=59195)[0m   "max_position_embeddings": 40960,
+[36m(WorkerDict pid=59195)[0m   "max_window_layers": 36,
+[36m(WorkerDict pid=59195)[0m   "model_type": "qwen3",
+[36m(WorkerDict pid=59195)[0m   "num_attention_heads": 32,
+[36m(WorkerDict pid=59195)[0m   "num_hidden_layers": 36,
+[36m(WorkerDict pid=59195)[0m   "num_key_value_heads": 8,
+[36m(WorkerDict pid=59195)[0m   "pad_token_id": 151643,
+[36m(WorkerDict pid=59195)[0m   "rms_norm_eps": 1e-06,
+[36m(WorkerDict pid=59195)[0m   "rope_scaling": null,
+[36m(WorkerDict pid=59195)[0m   "rope_theta": 1000000,
+[36m(WorkerDict pid=59195)[0m   "sliding_window": null,
+[36m(WorkerDict pid=59195)[0m   "tie_word_embeddings": false,
+[36m(WorkerDict pid=59195)[0m   "torch_dtype": "bfloat16",
+[36m(WorkerDict pid=59195)[0m   "transformers_version": "4.53.3",
+[36m(WorkerDict pid=59195)[0m   "use_cache": true,
+[36m(WorkerDict pid=59195)[0m   "use_sliding_window": false,
+[36m(WorkerDict pid=59195)[0m   "vocab_size": 151936
+[36m(WorkerDict pid=59195)[0m }
+[36m(WorkerDict pid=59195)[0m 
+[36m(WorkerDict pid=59552)[0m Actor use_remove_padding=True[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59552)[0m Actor use_fused_kernels=False[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59195)[0m Monkey patch _flash_attention_forward in transformers.integrations.flash_attention
+[36m(WorkerDict pid=59195)[0m Qwen3ForCausalLM contains 8.19B parameters
+[36m(WorkerDict pid=59195)[0m wrap_policy: functools.partial(<function _or_policy at 0x7f290af55360>, policies=[functools.partial(<function transformer_auto_wrap_policy at 0x7f290af55240>, transformer_layer_cls={<class 'transformers.models.qwen3.modeling_qwen3.Qwen3DecoderLayer'>})])
+[36m(WorkerDict pid=59553)[0m Monkey patch _flash_attention_forward in transformers.integrations.flash_attention
+[36m(WorkerDict pid=59553)[0m Total steps: 24, num_warmup_steps: 0
+[36m(WorkerDict pid=59554)[0m wrap_policy: functools.partial(<function _or_policy at 0x7f9a6e54d360>, policies=[functools.partial(<function transformer_auto_wrap_policy at 0x7f9a6e54d240>, transformer_layer_cls={<class 'transformers.models.qwen3.modeling_qwen3.Qwen3DecoderLayer'>})])[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59554)[0m Monkey patch _flash_attention_forward in transformers.integrations.flash_attention[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=59195)[0m Actor use_remove_padding=True
+[36m(WorkerDict pid=59195)[0m Actor use_fused_kernels=False
+[36m(WorkerDict pid=59195)[0m Total steps: 24, num_warmup_steps: 0[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59195)[0m WARNING 01-18 04:33:51 [cuda.py:93] To see benefits of async output processing, enable CUDA graph. Since, enforce-eager is enabled, async output processor cannot be used
+[36m(WorkerDict pid=59554)[0m Actor use_remove_padding=True[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59554)[0m Actor use_fused_kernels=False[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59195)[0m WARNING 01-18 04:33:54 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7f2780057100>
+[36m(WorkerDict pid=59195)[0m WARNING 01-18 04:33:55 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+[36m(WorkerDict pid=59553)[0m kwargs: {'n': 16, 'logprobs': 0, 'max_tokens': 23000, 'detokenize': False, 'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'ignore_eos': False}
+[36m(WorkerDict pid=59554)[0m WARNING 01-18 04:33:51 [cuda.py:93] To see benefits of async output processing, enable CUDA graph. Since, enforce-eager is enabled, async output processor cannot be used[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59554)[0m WARNING 01-18 04:33:54 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7f98ac07f6a0>[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59554)[0m WARNING 01-18 04:33:55 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.[32m [repeated 3x across cluster][0m
+Error executing job with overrides: ['algorithm.adv_estimator=grpo', 'data.train_files=Data/train.parquet', 'data.val_files=Data/test.parquet', 'data.train_batch_size=256', 'data.val_batch_size=256', 'data.max_prompt_length=7000', 'data.max_response_length=23000', 'data.filter_overlong_prompts=True', 'data.truncation=error', 'data.prompt_key=messages', 'data.system_style=Qwen3', 'data.enable_thinking=True', 'actor_rollout_ref.model.path=/wangbenyou-huanghejin/models/Qwen3-8B', 'actor_rollout_ref.actor.optim.lr=1e-6', 'actor_rollout_ref.model.use_remove_padding=True', 'actor_rollout_ref.actor.ppo_mini_batch_size=32', 'actor_rollout_ref.actor.use_dynamic_bsz=True', 'actor_rollout_ref.actor.ppo_max_token_len_per_gpu=30000', 'actor_rollout_ref.actor.use_kl_loss=True', 'actor_rollout_ref.actor.kl_loss_coef=0.001', 'actor_rollout_ref.actor.kl_loss_type=low_var_kl', 'actor_rollout_ref.actor.entropy_coeff=0.001', 'actor_rollout_ref.model.enable_gradient_checkpointing=True', 'actor_rollout_ref.actor.fsdp_config.param_offload=True', 'actor_rollout_ref.actor.fsdp_config.optimizer_offload=True', 'actor_rollout_ref.rollout.temperature=1.0', 'actor_rollout_ref.rollout.tensor_model_parallel_size=1', 'actor_rollout_ref.rollout.name=vllm', 'actor_rollout_ref.rollout.mode=sync', 'actor_rollout_ref.rollout.gpu_memory_utilization=0.7', 'actor_rollout_ref.rollout.n=16', 'actor_rollout_ref.rollout.max_num_batched_tokens=32768', 'actor_rollout_ref.ref.fsdp_config.param_offload=True', 'reward_model.reward_manager=tool', 'custom_reward_function.path=Code/verl/utils/reward_score/tool.py', 'custom_reward_function.name=compute_process_KM', 'algorithm.use_kl_in_reward=False', 'trainer.critic_warmup=0', 'trainer.logger=[console,wandb]', 'trainer.project_name=MatchTIR', 'trainer.experiment_name=MatchTIR-8B', 'trainer.val_before_train=False', '+trainer.val_only=False', 'trainer.n_gpus_per_node=4', 'trainer.nnodes=1', 'trainer.save_freq=8', 'trainer.test_freq=4', 'trainer.total_epochs=3']
+Traceback (most recent call last):
+  File "/wangbenyou-huanghejin/workspace/rl/MatchTIR/Code/verl/trainer/main_ppo.py", line 30, in main
+    run_ppo(config)
+  File "/wangbenyou-huanghejin/workspace/rl/MatchTIR/Code/verl/trainer/main_ppo.py", line 42, in run_ppo
+    ray.get(runner.run.remote(config))
+  File "/wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 22, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/ray/_private/worker.py", line 2961, in get
+    values, debugger_breakpoint = worker.get_objects(
+  File "/wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/ray/_private/worker.py", line 1026, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(AttributeError): [36mray::TaskRunner.run()[39m (pid=58126, ip=100.66.129.26, actor_id=6f12d42ed79c32ffb4e8439a01000000, repr=<main_ppo.TaskRunner object at 0x7f2ed568b130>)
+  File "/wangbenyou-huanghejin/workspace/rl/MatchTIR/Code/verl/trainer/main_ppo.py", line 150, in run
+    trainer.fit()
+  File "/wangbenyou-huanghejin/workspace/rl/MatchTIR/Code/verl/trainer/ppo/ray_trainer.py", line 877, in fit
+    logger = Tracking(
+  File "/wangbenyou-huanghejin/workspace/rl/MatchTIR/Code/verl/utils/tracking.py", line 42, in __init__
+    import wandb
+  File "/wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/wandb/__init__.py", line 26, in <module>
+    from wandb import sdk as wandb_sdk
+  File "/wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/wandb/sdk/__init__.py", line 7, in <module>
+    from .wandb_artifacts import Artifact  # noqa: F401
+  File "/wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/wandb/sdk/wandb_artifacts.py", line 31, in <module>
+    import wandb.data_types as data_types
+  File "/wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/wandb/data_types.py", line 32, in <module>
+    from .sdk.data_types import _dtypes
+  File "/wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/wandb/sdk/data_types/_dtypes.py", line 394, in <module>
+    NumberType.types.append(np.float_)
+  File "/wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/numpy/__init__.py", line 400, in __getattr__
+    raise AttributeError(
+AttributeError: `np.float_` was removed in the NumPy 2.0 release. Use `np.float64` instead.
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+[36m(WorkerDict pid=59552)[0m /wangbenyou-huanghejin/miniconda3/envs/MatchTIR/lib/python3.10/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:690: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59552)[0m   warnings.warn([32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=59552)[0m kwargs: {'n': 16, 'logprobs': 0, 'max_tokens': 23000, 'detokenize': False, 'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'ignore_eos': False}[32m [repeated 3x across cluster][0m
